@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/DBService
+END
+Web.config
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/infs3204g8/!svn/ver/4/Fnet1.4/Fnet/DBService/Web.config
+END
+DBOperationService.asmx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/DBService/DBOperationService.asmx.cs
+END
+DBService.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/DBService/DBService.csproj.user
+END
+DBService.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/DBService/DBService.csproj
+END
+DBOperation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/DBService/DBOperation.cs
+END
+DBOperationService.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/DBService/DBOperationService.asmx
+END

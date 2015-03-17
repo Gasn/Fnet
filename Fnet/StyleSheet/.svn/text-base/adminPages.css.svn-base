@@ -1,0 +1,157 @@
+﻿body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url('../images/img01.jpg') repeat-x;
+	font: normal 12px Tahoma, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+h1, h2{
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #F49500;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+h3 
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 13px;
+	color: #F49500;
+}
+
+p, blockquote {
+	line-height: 18px;
+	text-align: justify;
+}
+
+blockquote {
+	padding-left: 20px;
+	background: url('../images/img05.gif') repeat-y;
+}
+
+a {
+	color: #F49500;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.contentAdminPage
+{
+	float: none;
+	width: 950px;
+}
+
+
+.content {
+	width: 960px;
+	margin: 0 auto 64px auto;
+	padding: 30px;
+	background: url('../images/img05.gif') repeat-y;
+	height: 1000px;
+}
+
+
+.sendUserName
+{
+	Background-color: #F1FAF1;
+}
+
+.sendUserName td
+{
+	vertical-align: top;
+	padding: 10px;
+	text-align: left;
+}
+
+.sendUserName
+{
+	Background-color: #F1FAF1;
+}
+
+.sendUserName td
+{
+	vertical-align: top;
+	padding: 10px;
+	text-align: left;
+}
+
+.resetPassword
+{
+	Background-color: #FFFFE0;
+}
+
+.resetPassword td
+{
+	vertical-align: top;
+	padding: 10px;
+	text-align: left;
+}
+
+.warning 
+{
+	width: 636px;
+}
+
+
+/* ADDITONAL FOR ALL PAGES */
+
+/* MAIL BOX */
+
+.cols1Message
+{
+	color: Black;
+}
+
+.cols2Message
+{
+ font-size: smaller;
+}
+
+.cols3Message
+{
+ font-size: smaller;
+ text-align: right;
+}
+
+.inboxSection
+{
+	padding-top: 10px;
+}
+
+.messageTable
+{
+	width: 100%;
+	border-bottom: solid 1px #eef;
+	background: #ffffff;
+}
+
+.messageTable
+{
+	width: 100%;
+	border-bottom: solid 1px #eef;
+	background: #ffffff;
+}
+
+
+.messageTable:hover
+{
+	background: #eeeeee;
+}
+
+.lastestMessages
+{
+	background-color: #ffffff;
+}
+

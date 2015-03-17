@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ws.xwebservices.com/XWebEmailValidation/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://ws.xwebservices.com/XWebEmailValidation/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ws.xwebservices.com/XWebEmailValidation/">
+      <s:element name="ValidateEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strEmail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidateEmailResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthHeader" type="tns:AuthHeader" />
+      <s:complexType name="AuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidateEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateEmail" />
+  </wsdl:message>
+  <wsdl:message name="ValidateEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateEmailAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:portType name="XWebEmailValidationSoap">
+    <wsdl:operation name="ValidateEmail">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Validates a specific Email address.</documentation>
+      <wsdl:input message="tns:ValidateEmailSoapIn" />
+      <wsdl:output message="tns:ValidateEmailSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="XWebEmailValidationSoap" type="tns:XWebEmailValidationSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateEmail">
+      <soap:operation soapAction="http://ws.xwebservices.com/XWebEmailValidation/ValidateEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ValidateEmailAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="XWebEmailValidation">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">XWebEmailValidation is an XML/SOAP based Web Service which validates Email addresses for client applications. For complete documentation please visit http://www.xwebservices.com/Web_Services/XWebEmailValidation/.</documentation>
+    <wsdl:port name="XWebEmailValidationSoap" binding="tns:XWebEmailValidationSoap">
+      <soap:address location="https://ws.xwebservices.com/XWebEmailValidation/XWebEmailValidation.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

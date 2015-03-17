@@ -1,0 +1,85 @@
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\DBService\bin\DBService.dll
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\DBService\bin\DBService.pdb
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\DBService\bin\DBService.dll
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\DBService\bin\DBService.pdb
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\DBService\bin\DBService.dll
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\DBService\bin\DBService.pdb
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+H:\New Folder\BrisbaneConnect\DBService\bin\DBService.dll
+H:\New Folder\BrisbaneConnect\DBService\bin\DBService.pdb
+H:\New Folder\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+H:\New Folder\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+H:\New Folder\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+C:\New Folder\BrisbaneConnect\DBService\bin\DBService.dll
+C:\New Folder\BrisbaneConnect\DBService\bin\DBService.pdb
+C:\New Folder\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+C:\New Folder\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+C:\New Folder\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+C:\BrisbaneConnect\DBService\bin\DBService.dll
+C:\BrisbaneConnect\DBService\bin\DBService.pdb
+C:\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+C:\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+C:\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+H:\BrisbaneConnect\DBService\bin\DBService.dll
+H:\BrisbaneConnect\DBService\bin\DBService.pdb
+H:\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+H:\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+H:\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+E:\BrisbaneConnect\DBService\bin\DBService.dll
+E:\BrisbaneConnect\DBService\bin\DBService.pdb
+E:\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+E:\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+E:\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+H:\Project\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+H:\Project\BrisbaneConnect\DBService\bin\DBService.dll
+H:\Project\BrisbaneConnect\DBService\bin\DBService.pdb
+H:\Project\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+H:\ThaoCode\BrisbaneConnect\DBService\bin\DBService.dll
+H:\ThaoCode\BrisbaneConnect\DBService\bin\DBService.pdb
+H:\ThaoCode\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+H:\ThaoCode\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+H:\ThaoCode\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+H:\Thao\BrisbaneConnect\DBService\bin\DBService.dll
+H:\Thao\BrisbaneConnect\DBService\bin\DBService.pdb
+H:\Thao\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+H:\Thao\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+H:\Thao\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+H:\Fnet\Fnet1.1\BrisbaneConnect\DBService\bin\DBService.dll
+H:\Fnet\Fnet1.1\BrisbaneConnect\DBService\bin\DBService.pdb
+H:\Fnet\Fnet1.1\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet\Fnet1.1\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+H:\Fnet\Fnet1.1\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+H:\Fnet\Fnet1.2\BrisbaneConnect\DBService\bin\DBService.dll
+H:\Fnet\Fnet1.2\BrisbaneConnect\DBService\bin\DBService.pdb
+H:\Fnet\Fnet1.2\BrisbaneConnect\DBService\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet\Fnet1.2\BrisbaneConnect\DBService\obj\Debug\DBService.dll
+H:\Fnet\Fnet1.2\BrisbaneConnect\DBService\obj\Debug\DBService.pdb
+H:\Fnet1.2\Fnet\DBService\bin\DBService.dll
+H:\Fnet1.2\Fnet\DBService\bin\DBService.pdb
+H:\Fnet1.2\Fnet\DBService\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet1.2\Fnet\DBService\obj\Debug\DBService.dll
+H:\Fnet1.2\Fnet\DBService\obj\Debug\DBService.pdb
+H:\Fnet\Fnet1.4\Fnet\DBService\bin\DBService.dll
+H:\Fnet\Fnet1.4\Fnet\DBService\bin\DBService.pdb
+H:\Fnet\Fnet1.4\Fnet\DBService\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet\Fnet1.4\Fnet\DBService\obj\Debug\DBService.dll
+H:\Fnet\Fnet1.4\Fnet\DBService\obj\Debug\DBService.pdb
+H:\Fnet\Demo\Fnet1.4\Fnet\DBService\bin\DBService.dll
+H:\Fnet\Demo\Fnet1.4\Fnet\DBService\bin\DBService.pdb
+H:\Fnet\Demo\Fnet1.4\Fnet\DBService\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet\Demo\Fnet1.4\Fnet\DBService\obj\Debug\DBService.dll
+H:\Fnet\Demo\Fnet1.4\Fnet\DBService\obj\Debug\DBService.pdb
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\DBService\bin\DBService.dll
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\DBService\bin\DBService.pdb
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\DBService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\DBService\obj\Debug\DBService.dll
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\DBService\obj\Debug\DBService.pdb

@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CheckUnreadMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUnreadMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckUnreadMessageResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckAllMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckAllMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckAllMessageResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="receiverID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertMessageResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertComment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="comment" type="tns:Comment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Comment">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CommentID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Create_date" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReplyID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CommetOnUserID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertCommentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="deleteReplyComment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="comment_id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteReplyCommentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="deleteComment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="comment_id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteCommentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMainCommentByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMainCommentByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMainCommentByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResponseCommentByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="commentID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResponseCommentByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetResponseCommentByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMessageByUserID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMessageByUserIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMessageByUserIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTopUnreadByUserID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTopUnreadByUserIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTopUnreadByUserIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnreadMessageCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnreadMessageCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUnreadMessageCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateReadMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="messageID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateReadMessageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="messageID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMessageResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckUnreadMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUnreadMessage" />
+  </wsdl:message>
+  <wsdl:message name="CheckUnreadMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUnreadMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckAllMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckAllMessage" />
+  </wsdl:message>
+  <wsdl:message name="CheckAllMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckAllMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertMessage" />
+  </wsdl:message>
+  <wsdl:message name="InsertMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertCommentSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertComment" />
+  </wsdl:message>
+  <wsdl:message name="InsertCommentSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteReplyCommentSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteReplyComment" />
+  </wsdl:message>
+  <wsdl:message name="deleteReplyCommentSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteReplyCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteCommentSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteComment" />
+  </wsdl:message>
+  <wsdl:message name="deleteCommentSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMainCommentByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMainCommentByID" />
+  </wsdl:message>
+  <wsdl:message name="GetMainCommentByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMainCommentByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetResponseCommentByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetResponseCommentByID" />
+  </wsdl:message>
+  <wsdl:message name="GetResponseCommentByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetResponseCommentByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMessageByUserIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMessageByUserID" />
+  </wsdl:message>
+  <wsdl:message name="GetMessageByUserIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMessageByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTopUnreadByUserIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTopUnreadByUserID" />
+  </wsdl:message>
+  <wsdl:message name="GetTopUnreadByUserIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTopUnreadByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUnreadMessageCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageCount" />
+  </wsdl:message>
+  <wsdl:message name="GetUnreadMessageCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateReadMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateReadMessage" />
+  </wsdl:message>
+  <wsdl:message name="UpdateReadMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateReadMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMessage" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMessageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Message_x0020_ServiceSoap">
+    <wsdl:operation name="CheckUnreadMessage">
+      <wsdl:input message="tns:CheckUnreadMessageSoapIn" />
+      <wsdl:output message="tns:CheckUnreadMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckAllMessage">
+      <wsdl:input message="tns:CheckAllMessageSoapIn" />
+      <wsdl:output message="tns:CheckAllMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessage">
+      <wsdl:input message="tns:InsertMessageSoapIn" />
+      <wsdl:output message="tns:InsertMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertComment">
+      <wsdl:input message="tns:InsertCommentSoapIn" />
+      <wsdl:output message="tns:InsertCommentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteReplyComment">
+      <wsdl:input message="tns:deleteReplyCommentSoapIn" />
+      <wsdl:output message="tns:deleteReplyCommentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteComment">
+      <wsdl:input message="tns:deleteCommentSoapIn" />
+      <wsdl:output message="tns:deleteCommentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMainCommentByID">
+      <wsdl:input message="tns:GetMainCommentByIDSoapIn" />
+      <wsdl:output message="tns:GetMainCommentByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResponseCommentByID">
+      <wsdl:input message="tns:GetResponseCommentByIDSoapIn" />
+      <wsdl:output message="tns:GetResponseCommentByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageByUserID">
+      <wsdl:input message="tns:GetMessageByUserIDSoapIn" />
+      <wsdl:output message="tns:GetMessageByUserIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTopUnreadByUserID">
+      <wsdl:input message="tns:GetTopUnreadByUserIDSoapIn" />
+      <wsdl:output message="tns:GetTopUnreadByUserIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <wsdl:input message="tns:GetUnreadMessageCountSoapIn" />
+      <wsdl:output message="tns:GetUnreadMessageCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReadMessage">
+      <wsdl:input message="tns:UpdateReadMessageSoapIn" />
+      <wsdl:output message="tns:UpdateReadMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMessage">
+      <wsdl:input message="tns:DeleteMessageSoapIn" />
+      <wsdl:output message="tns:DeleteMessageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Message_x0020_ServiceSoap" type="tns:Message_x0020_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckUnreadMessage">
+      <soap:operation soapAction="http://tempuri.org/CheckUnreadMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckAllMessage">
+      <soap:operation soapAction="http://tempuri.org/CheckAllMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessage">
+      <soap:operation soapAction="http://tempuri.org/InsertMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertComment">
+      <soap:operation soapAction="http://tempuri.org/InsertComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteReplyComment">
+      <soap:operation soapAction="http://tempuri.org/deleteReplyComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteComment">
+      <soap:operation soapAction="http://tempuri.org/deleteComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMainCommentByID">
+      <soap:operation soapAction="http://tempuri.org/GetMainCommentByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResponseCommentByID">
+      <soap:operation soapAction="http://tempuri.org/GetResponseCommentByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageByUserID">
+      <soap:operation soapAction="http://tempuri.org/GetMessageByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopUnreadByUserID">
+      <soap:operation soapAction="http://tempuri.org/GetTopUnreadByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <soap:operation soapAction="http://tempuri.org/GetUnreadMessageCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReadMessage">
+      <soap:operation soapAction="http://tempuri.org/UpdateReadMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMessage">
+      <soap:operation soapAction="http://tempuri.org/DeleteMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Message_x0020_ServiceSoap12" type="tns:Message_x0020_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckUnreadMessage">
+      <soap12:operation soapAction="http://tempuri.org/CheckUnreadMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckAllMessage">
+      <soap12:operation soapAction="http://tempuri.org/CheckAllMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMessage">
+      <soap12:operation soapAction="http://tempuri.org/InsertMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertComment">
+      <soap12:operation soapAction="http://tempuri.org/InsertComment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteReplyComment">
+      <soap12:operation soapAction="http://tempuri.org/deleteReplyComment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteComment">
+      <soap12:operation soapAction="http://tempuri.org/deleteComment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMainCommentByID">
+      <soap12:operation soapAction="http://tempuri.org/GetMainCommentByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResponseCommentByID">
+      <soap12:operation soapAction="http://tempuri.org/GetResponseCommentByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageByUserID">
+      <soap12:operation soapAction="http://tempuri.org/GetMessageByUserID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopUnreadByUserID">
+      <soap12:operation soapAction="http://tempuri.org/GetTopUnreadByUserID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <soap12:operation soapAction="http://tempuri.org/GetUnreadMessageCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReadMessage">
+      <soap12:operation soapAction="http://tempuri.org/UpdateReadMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMessage">
+      <soap12:operation soapAction="http://tempuri.org/DeleteMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Message_x0020_Service">
+    <wsdl:port name="Message_x0020_ServiceSoap" binding="tns:Message_x0020_ServiceSoap">
+      <soap:address location="http://localhost:3333/MessageService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Message_x0020_ServiceSoap12" binding="tns:Message_x0020_ServiceSoap12">
+      <soap12:address location="http://localhost:3333/MessageService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

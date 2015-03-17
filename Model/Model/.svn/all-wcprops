@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/Model/Model
+END
+DiscussionBoard.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/Model/Model/DiscussionBoard.cs
+END
+FileSharing.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/Model/Model/FileSharing.cs
+END
+Group.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/Model/Model/Group.cs
+END
+Category.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/Model/Model/Category.cs
+END
+User.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/Model/Model/User.cs
+END
+UserType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/Model/Model/UserType.cs
+END
+Relationship.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/Model/Model/Relationship.cs
+END
+Comment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/Model/Model/Comment.cs
+END
+Message.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/Model/Model/Message.cs
+END

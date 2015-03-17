@@ -1,0 +1,102 @@
+﻿body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url('../images/img01.jpg') repeat-x;
+	font: normal 12px Tahoma, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+h1, h2{
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #F49500;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+h3 
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 13px;
+	color: #F49500;
+}
+
+p, blockquote {
+	line-height: 18px;
+	text-align: justify;
+}
+
+blockquote {
+	padding-left: 20px;
+	background: url('../images/img05.gif') repeat-y;
+}
+
+a {
+	color: #F49500;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#contentMessage
+{
+	float: none;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/* COMPOSE MESSAGE */
+
+/* READING INBOX MESSAGE*/
+.readingInbocTable 
+{
+	width: 500px;
+}
+
+.Rcols1
+{
+	width: 70px;
+}
+
+.Rcols2
+{
+	background-color: #F5FFFA;
+}
+
+.readingInboxTable td
+{
+	padding: 5px;
+	padding-left: 10px;
+	border: solid 1px #eee;
+	text-align: left;
+}
+
+.messageDetails
+{
+	margin: 5px;
+}
+
+.messageCellDetail
+{
+	height: 200px;
+	vertical-align: top;
+	padding: 10px;
+	border: #bbb;
+}
+
+
+/* button */
+
+.buttonContent
+{
+	border: solid 1px #fff;
+}

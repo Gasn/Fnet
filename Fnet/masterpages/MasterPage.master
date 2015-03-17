@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <title>Fnet homepage</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- header bar -->
+    <div>
+    <div class="headerbar" align="center"></div>
+    <!-- Menu -->
+    
+    <div class="rhm1" >
+        <div class="rhm1-bg"> 
+        <ul>    
+	        <li id="menu_Help"><a href="#" ><span>Help</span></a></li>
+	        <li id="menu_Contact"><a href="#" ><span>Contact Us</span></a></li>
+	        <li id="menu_About"><a href="#" ><span>About Us</span></a></li>
+	        <li id="menu_home" ><a href="#"><span>Home</span></a></li>		
+                        <li></li>
+                        <li></li>
+        </ul>
+        </div>
+    </div>
+    <div style="margin-left: 120px;">
+            &nbsp;</div>
+    <div >
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <!-- footer -->
+    <div id="footer" >
+    	<p id="legal" align="center"><br />
+    	Copyright &copy; 2010 Fnet Social Networking. Designed by Team 8 Includes: Thao, Sang, Nguyen and Long <a href="#"></a></p>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

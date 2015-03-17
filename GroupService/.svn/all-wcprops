@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/GroupService
+END
+web.config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/GroupService/web.config
+END
+GroupService.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/GroupService/GroupService.asmx
+END
+GroupService.asmx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repo/infs3204g8/!svn/ver/4/Fnet1.4/Fnet/GroupService/GroupService.asmx.cs
+END
+GroupService.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/GroupService/GroupService.csproj.user
+END
+GroupService.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/GroupService/GroupService.csproj
+END

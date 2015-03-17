@@ -1,0 +1,104 @@
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\SearchService\bin\SearchService.dll
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\SearchService\bin\SearchService.pdb
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\SearchService\bin\SearchService.dll
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\SearchService\bin\SearchService.pdb
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\SearchService\bin\SearchService.dll
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\SearchService\bin\SearchService.pdb
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+H:\New Folder\BrisbaneConnect\SearchService\bin\SearchService.dll
+H:\New Folder\BrisbaneConnect\SearchService\bin\SearchService.pdb
+H:\New Folder\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+H:\New Folder\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+H:\New Folder\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+C:\New Folder\BrisbaneConnect\SearchService\bin\SearchService.dll
+C:\New Folder\BrisbaneConnect\SearchService\bin\SearchService.pdb
+C:\New Folder\BrisbaneConnect\SearchService\bin\Model.dll
+C:\New Folder\BrisbaneConnect\SearchService\bin\Model.pdb
+C:\New Folder\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+C:\New Folder\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+C:\New Folder\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+C:\BrisbaneConnect\SearchService\bin\SearchService.dll
+C:\BrisbaneConnect\SearchService\bin\SearchService.pdb
+C:\BrisbaneConnect\SearchService\bin\Model.dll
+C:\BrisbaneConnect\SearchService\bin\Model.pdb
+C:\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+C:\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+C:\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+H:\BrisbaneConnect\SearchService\bin\SearchService.dll
+H:\BrisbaneConnect\SearchService\bin\SearchService.pdb
+H:\BrisbaneConnect\SearchService\bin\Model.dll
+H:\BrisbaneConnect\SearchService\bin\Model.pdb
+H:\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+H:\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+H:\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+H:\Project\BrisbaneConnect\SearchService\bin\SearchService.dll
+H:\Project\BrisbaneConnect\SearchService\bin\SearchService.pdb
+H:\Project\BrisbaneConnect\SearchService\bin\Model.dll
+H:\Project\BrisbaneConnect\SearchService\bin\Model.pdb
+H:\Project\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+H:\Project\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+H:\ThaoCode\BrisbaneConnect\SearchService\bin\SearchService.dll
+H:\ThaoCode\BrisbaneConnect\SearchService\bin\SearchService.pdb
+H:\ThaoCode\BrisbaneConnect\SearchService\bin\Model.dll
+H:\ThaoCode\BrisbaneConnect\SearchService\bin\Model.pdb
+H:\ThaoCode\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+H:\ThaoCode\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+H:\ThaoCode\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+H:\Thao\BrisbaneConnect\SearchService\bin\SearchService.dll
+H:\Thao\BrisbaneConnect\SearchService\bin\SearchService.pdb
+H:\Thao\BrisbaneConnect\SearchService\bin\Model.dll
+H:\Thao\BrisbaneConnect\SearchService\bin\Model.pdb
+H:\Thao\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+H:\Thao\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+H:\Thao\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+H:\Fnet\Fnet1.1\BrisbaneConnect\SearchService\bin\SearchService.dll
+H:\Fnet\Fnet1.1\BrisbaneConnect\SearchService\bin\SearchService.pdb
+H:\Fnet\Fnet1.1\BrisbaneConnect\SearchService\bin\Model.dll
+H:\Fnet\Fnet1.1\BrisbaneConnect\SearchService\bin\Model.pdb
+H:\Fnet\Fnet1.1\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet\Fnet1.1\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+H:\Fnet\Fnet1.1\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+H:\Fnet\Fnet1.2\BrisbaneConnect\SearchService\bin\SearchService.dll
+H:\Fnet\Fnet1.2\BrisbaneConnect\SearchService\bin\SearchService.pdb
+H:\Fnet\Fnet1.2\BrisbaneConnect\SearchService\bin\Model.dll
+H:\Fnet\Fnet1.2\BrisbaneConnect\SearchService\bin\Model.pdb
+H:\Fnet\Fnet1.2\BrisbaneConnect\SearchService\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet\Fnet1.2\BrisbaneConnect\SearchService\obj\Debug\SearchService.dll
+H:\Fnet\Fnet1.2\BrisbaneConnect\SearchService\obj\Debug\SearchService.pdb
+H:\Fnet1.2\Fnet\SearchService\bin\SearchService.dll
+H:\Fnet1.2\Fnet\SearchService\bin\SearchService.pdb
+H:\Fnet1.2\Fnet\SearchService\bin\Model.dll
+H:\Fnet1.2\Fnet\SearchService\bin\Model.pdb
+H:\Fnet1.2\Fnet\SearchService\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet1.2\Fnet\SearchService\obj\Debug\SearchService.dll
+H:\Fnet1.2\Fnet\SearchService\obj\Debug\SearchService.pdb
+H:\Fnet\Fnet1.4\Fnet\SearchService\bin\SearchService.dll
+H:\Fnet\Fnet1.4\Fnet\SearchService\bin\SearchService.pdb
+H:\Fnet\Fnet1.4\Fnet\SearchService\bin\Model.dll
+H:\Fnet\Fnet1.4\Fnet\SearchService\bin\Model.pdb
+H:\Fnet\Fnet1.4\Fnet\SearchService\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet\Fnet1.4\Fnet\SearchService\obj\Debug\SearchService.dll
+H:\Fnet\Fnet1.4\Fnet\SearchService\obj\Debug\SearchService.pdb
+H:\Fnet\Demo\Fnet1.4\Fnet\SearchService\bin\SearchService.dll
+H:\Fnet\Demo\Fnet1.4\Fnet\SearchService\bin\SearchService.pdb
+H:\Fnet\Demo\Fnet1.4\Fnet\SearchService\bin\Model.dll
+H:\Fnet\Demo\Fnet1.4\Fnet\SearchService\bin\Model.pdb
+H:\Fnet\Demo\Fnet1.4\Fnet\SearchService\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet\Demo\Fnet1.4\Fnet\SearchService\obj\Debug\SearchService.dll
+H:\Fnet\Demo\Fnet1.4\Fnet\SearchService\obj\Debug\SearchService.pdb
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\SearchService\bin\SearchService.dll
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\SearchService\bin\SearchService.pdb
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\SearchService\bin\Model.dll
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\SearchService\bin\Model.pdb
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\SearchService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\SearchService\obj\Debug\SearchService.dll
+C:\Documents and Settings\s4226373\Desktop\infs3204g8\Fnet1.4\Fnet\SearchService\obj\Debug\SearchService.pdb

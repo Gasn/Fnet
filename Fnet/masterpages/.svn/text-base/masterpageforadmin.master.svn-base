@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterpageforadmin.master.cs" Inherits="masterpages_masterpageforadmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <!--[if lte IE 7]>
+    <style type="text/css">
+    html .jqueryslidemenu{height: 1%;}
+    </style>
+    <![endif]-->
+
+</head>
+<body>
+    
+    
+    <form id="form2" runat="server">
+    <!-- header bar -->
+    <div class="headerbar" align="right">
+             <asp:LinkButton ID="lnkLogout" runat="server" 
+             ForeColor="#00CC99" Font-Bold="True" Font-Underline="True" onclick="lnkLogout_Click">Sign Out</asp:LinkButton>
+        </div>
+    <!-- Menu -->
+   
+    <div class="rhm1" >
+        <div class="rhm1-bg"> 
+        <ul>    
+	        <li id="menu_Help"><a href="#" ><span>Help</span></a></li>
+	        <li id="menu_Contact"><a href="#" ><span>Contact Us</span></a></li>
+	        <li id="menu_About"><a href="#" ><span>About Us</span></a></li>
+	       
+        </ul>
+        </div>
+    </div>  
+            <br />
+            <br />
+            <br />
+            <br />
+    <div class="contentpage">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    
+    </div>
+     
+        <br />
+    </form>
+     <!-- footer -->
+        <div id="footer" >
+    	    <p id="legal"><br />
+    	    Copyright &copy; 2010 Fnet Social Networking. Designed by Team 8 Includes: Thao, Sang, Nguyen and Long <a href="#"></a></p>
+        </div>
+</body>
+</html>

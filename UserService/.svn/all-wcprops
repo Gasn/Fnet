@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/UserService
+END
+web.config
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/UserService/web.config
+END
+UserService.asmx
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/UserService/UserService.asmx
+END
+UserService.asmx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/UserService/UserService.asmx.cs
+END
+UserService.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/UserService/UserService.csproj.user
+END
+UserService.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/UserService/UserService.csproj
+END

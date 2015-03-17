@@ -1,0 +1,87 @@
+C:\Documents and Settings\s4190951\Desktop\BrisbaneConnect\bin\BrisbaneConnect.dll
+C:\Documents and Settings\s4190951\Desktop\BrisbaneConnect\bin\BrisbaneConnect.pdb
+C:\Documents and Settings\s4190951\Desktop\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\s4190951\Desktop\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+C:\Documents and Settings\s4190951\Desktop\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+C:\Documents and Settings\s4190951\Desktop\INFS3204_Assignment\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+C:\Documents and Settings\s4190951\Desktop\INFS3204_Assignment\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+C:\Documents and Settings\s4190951\Desktop\INFS3204_Assignment\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\s4190951\Desktop\INFS3204_Assignment\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+C:\Documents and Settings\s4190951\Desktop\INFS3204_Assignment\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+C:\Documents and Settings\TEMP\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+C:\Documents and Settings\s4190951\Desktop\INFS3204\trunk\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+C:\Documents and Settings\s4113556\Desktop\New Folder\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+H:\New Folder\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+H:\New Folder\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+H:\New Folder\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+H:\New Folder\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+H:\New Folder\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+H:\New Folder\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+H:\New Folder\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+C:\New Folder\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+C:\New Folder\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+C:\New Folder\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+C:\New Folder\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+C:\New Folder\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+C:\New Folder\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+C:\New Folder\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+C:\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+C:\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+C:\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+C:\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+C:\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+C:\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+C:\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+H:\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+H:\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+H:\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+H:\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+H:\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+H:\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+H:\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+H:\Project\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+H:\Project\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+H:\Project\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+H:\Project\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+H:\Project\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+H:\Project\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+H:\Project\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+H:\ThaoCode\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+H:\ThaoCode\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+H:\ThaoCode\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+H:\ThaoCode\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+H:\ThaoCode\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+H:\ThaoCode\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+H:\ThaoCode\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+H:\Thao\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+H:\Thao\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+H:\Thao\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+H:\Thao\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+H:\Thao\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+H:\Thao\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+H:\Thao\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb
+H:\Fnet\Fnet1.1\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.dll
+H:\Fnet\Fnet1.1\BrisbaneConnect\BrisbaneConnect\bin\BrisbaneConnect.pdb
+H:\Fnet\Fnet1.1\BrisbaneConnect\BrisbaneConnect\bin\Model.dll
+H:\Fnet\Fnet1.1\BrisbaneConnect\BrisbaneConnect\bin\Model.pdb
+H:\Fnet\Fnet1.1\BrisbaneConnect\BrisbaneConnect\obj\Debug\ResolveAssemblyReference.cache
+H:\Fnet\Fnet1.1\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.dll
+H:\Fnet\Fnet1.1\BrisbaneConnect\BrisbaneConnect\obj\Debug\BrisbaneConnect.pdb

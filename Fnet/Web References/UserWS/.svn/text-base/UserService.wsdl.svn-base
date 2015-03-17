@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetUserByPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserByPasswordResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserByUserNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserByIDResult" type="tns:_User" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="_User">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Suburb" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dob" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModifiedDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserTypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gender" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LookingFor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserTypeByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserTypeByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserTypeByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUniqueUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUniqueUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckUniqueUserNameResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdminDeleteUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdminDeleteUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AdminModifyUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdminModifyUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:_User" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLookingForList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLookingForListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLookingForListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInterestList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetInterestListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInterestListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:_User" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateUserResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserLookingFor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserLookingForResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserLookingForResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckDualRelationship">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RequestUserID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RespondUserID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RelationshipTypeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckDualRelationshipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckDualRelationshipResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getGender">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getGenderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getGenderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AcceptRelationshipRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="relationshipType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="relationID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="responder" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AcceptRelationshipRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AcceptRelationshipRequestResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRelationID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RequestID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RespondID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RelationTypeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRelationIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserRelationIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserFullname">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserFullnameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserFullnameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestEstablishRelationship">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RUserID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RelationshipTypeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestEstablishRelationshipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestEstablishRelationshipResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFriendList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFriendListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFriendListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelationshipName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RelationshipID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelationshipNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRelationshipNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelationshipID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RelationshipName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelationshipIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRelationshipIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestRelationship">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RequestUserID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RespondUserID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Relationship_Name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestRelationshipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RequestRelationshipResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckRelationship">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckRelationshipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckRelationshipResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOppositeCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="catName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="genderName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOppositeCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOppositeCategoryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllRelationshipType">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllRelationshipTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllRelationshipTypeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRelationshipWith">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRelationshipWithResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserRelationshipWithResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRelationshipType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="relationshipID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRelationshipTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserRelationshipTypeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsersName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsersNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsersNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInterest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInterestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInterestResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLookingFor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="lookingForList" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateLookingForResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateInterest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="interestList" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInterestResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InsertFriend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="friendID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertFriendResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateFriendStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requestID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="respondID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFriendStatusResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUserByPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserByPassword" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserByPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserByUserName" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserByUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserByID" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTypeByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserTypeByID" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTypeByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserTypeByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUniqueUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUniqueUserName" />
+  </wsdl:message>
+  <wsdl:message name="CheckUniqueUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUniqueUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="AdminDeleteUserSoapIn">
+    <wsdl:part name="parameters" element="tns:AdminDeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="AdminDeleteUserSoapOut">
+    <wsdl:part name="parameters" element="tns:AdminDeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="AdminModifyUserSoapIn">
+    <wsdl:part name="parameters" element="tns:AdminModifyUser" />
+  </wsdl:message>
+  <wsdl:message name="AdminModifyUserSoapOut">
+    <wsdl:part name="parameters" element="tns:AdminModifyUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUserSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUser" />
+  </wsdl:message>
+  <wsdl:message name="AddUserSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLookingForListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLookingForList" />
+  </wsdl:message>
+  <wsdl:message name="GetLookingForListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLookingForListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInterestListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInterestList" />
+  </wsdl:message>
+  <wsdl:message name="GetInterestListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInterestListResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserLookingForSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserLookingFor" />
+  </wsdl:message>
+  <wsdl:message name="GetUserLookingForSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserLookingForResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckDualRelationshipSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckDualRelationship" />
+  </wsdl:message>
+  <wsdl:message name="CheckDualRelationshipSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckDualRelationshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="getGenderSoapIn">
+    <wsdl:part name="parameters" element="tns:getGender" />
+  </wsdl:message>
+  <wsdl:message name="getGenderSoapOut">
+    <wsdl:part name="parameters" element="tns:getGenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AcceptRelationshipRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:AcceptRelationshipRequest" />
+  </wsdl:message>
+  <wsdl:message name="AcceptRelationshipRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:AcceptRelationshipRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRelationIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserRelationID" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRelationIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserRelationIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserFullnameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserFullname" />
+  </wsdl:message>
+  <wsdl:message name="GetUserFullnameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserFullnameResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestEstablishRelationshipSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestEstablishRelationship" />
+  </wsdl:message>
+  <wsdl:message name="RequestEstablishRelationshipSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestEstablishRelationshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFriendListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFriendList" />
+  </wsdl:message>
+  <wsdl:message name="GetFriendListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFriendListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRelationshipNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRelationshipName" />
+  </wsdl:message>
+  <wsdl:message name="GetRelationshipNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRelationshipNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRelationshipIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRelationshipID" />
+  </wsdl:message>
+  <wsdl:message name="GetRelationshipIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRelationshipIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestRelationshipSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestRelationship" />
+  </wsdl:message>
+  <wsdl:message name="RequestRelationshipSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestRelationshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckRelationshipSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckRelationship" />
+  </wsdl:message>
+  <wsdl:message name="CheckRelationshipSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckRelationshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOppositeCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetOppositeCategory" />
+  </wsdl:message>
+  <wsdl:message name="GetOppositeCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetOppositeCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRelationshipTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllRelationshipType" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRelationshipTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllRelationshipTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRelationshipWithSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserRelationshipWith" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRelationshipWithSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserRelationshipWithResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRelationshipTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserRelationshipType" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRelationshipTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserRelationshipTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsersName" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsersNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInterestSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserInterest" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInterestSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserInterestResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLookingForSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLookingFor" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLookingForSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLookingForResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInterestSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateInterest" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInterestSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateInterestResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertFriendSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertFriend" />
+  </wsdl:message>
+  <wsdl:message name="InsertFriendSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertFriendResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFriendStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateFriendStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFriendStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateFriendStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="User_x0020_ServiceSoap">
+    <wsdl:operation name="GetUserByPassword">
+      <wsdl:input message="tns:GetUserByPasswordSoapIn" />
+      <wsdl:output message="tns:GetUserByPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByUserName">
+      <wsdl:input message="tns:GetUserByUserNameSoapIn" />
+      <wsdl:output message="tns:GetUserByUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByID">
+      <wsdl:input message="tns:GetUserByIDSoapIn" />
+      <wsdl:output message="tns:GetUserByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeByID">
+      <wsdl:input message="tns:GetUserTypeByIDSoapIn" />
+      <wsdl:output message="tns:GetUserTypeByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUniqueUserName">
+      <wsdl:input message="tns:CheckUniqueUserNameSoapIn" />
+      <wsdl:output message="tns:CheckUniqueUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AdminDeleteUser">
+      <wsdl:input message="tns:AdminDeleteUserSoapIn" />
+      <wsdl:output message="tns:AdminDeleteUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AdminModifyUser">
+      <wsdl:input message="tns:AdminModifyUserSoapIn" />
+      <wsdl:output message="tns:AdminModifyUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:input message="tns:AddUserSoapIn" />
+      <wsdl:output message="tns:AddUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLookingForList">
+      <wsdl:input message="tns:GetLookingForListSoapIn" />
+      <wsdl:output message="tns:GetLookingForListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInterestList">
+      <wsdl:input message="tns:GetInterestListSoapIn" />
+      <wsdl:output message="tns:GetInterestListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input message="tns:UpdateUserSoapIn" />
+      <wsdl:output message="tns:UpdateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLookingFor">
+      <wsdl:input message="tns:GetUserLookingForSoapIn" />
+      <wsdl:output message="tns:GetUserLookingForSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDualRelationship">
+      <wsdl:input message="tns:CheckDualRelationshipSoapIn" />
+      <wsdl:output message="tns:CheckDualRelationshipSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getGender">
+      <wsdl:input message="tns:getGenderSoapIn" />
+      <wsdl:output message="tns:getGenderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AcceptRelationshipRequest">
+      <wsdl:input message="tns:AcceptRelationshipRequestSoapIn" />
+      <wsdl:output message="tns:AcceptRelationshipRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRelationID">
+      <wsdl:input message="tns:GetUserRelationIDSoapIn" />
+      <wsdl:output message="tns:GetUserRelationIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserFullname">
+      <wsdl:input message="tns:GetUserFullnameSoapIn" />
+      <wsdl:output message="tns:GetUserFullnameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestEstablishRelationship">
+      <wsdl:input message="tns:RequestEstablishRelationshipSoapIn" />
+      <wsdl:output message="tns:RequestEstablishRelationshipSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFriendList">
+      <wsdl:input message="tns:GetFriendListSoapIn" />
+      <wsdl:output message="tns:GetFriendListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationshipName">
+      <wsdl:input message="tns:GetRelationshipNameSoapIn" />
+      <wsdl:output message="tns:GetRelationshipNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationshipID">
+      <wsdl:input message="tns:GetRelationshipIDSoapIn" />
+      <wsdl:output message="tns:GetRelationshipIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestRelationship">
+      <wsdl:input message="tns:RequestRelationshipSoapIn" />
+      <wsdl:output message="tns:RequestRelationshipSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckRelationship">
+      <wsdl:input message="tns:CheckRelationshipSoapIn" />
+      <wsdl:output message="tns:CheckRelationshipSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOppositeCategory">
+      <wsdl:input message="tns:GetOppositeCategorySoapIn" />
+      <wsdl:output message="tns:GetOppositeCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRelationshipType">
+      <wsdl:input message="tns:GetAllRelationshipTypeSoapIn" />
+      <wsdl:output message="tns:GetAllRelationshipTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRelationshipWith">
+      <wsdl:input message="tns:GetUserRelationshipWithSoapIn" />
+      <wsdl:output message="tns:GetUserRelationshipWithSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRelationshipType">
+      <wsdl:input message="tns:GetUserRelationshipTypeSoapIn" />
+      <wsdl:output message="tns:GetUserRelationshipTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersName">
+      <wsdl:input message="tns:GetUsersNameSoapIn" />
+      <wsdl:output message="tns:GetUsersNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInterest">
+      <wsdl:input message="tns:GetUserInterestSoapIn" />
+      <wsdl:output message="tns:GetUserInterestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLookingFor">
+      <wsdl:input message="tns:UpdateLookingForSoapIn" />
+      <wsdl:output message="tns:UpdateLookingForSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInterest">
+      <wsdl:input message="tns:UpdateInterestSoapIn" />
+      <wsdl:output message="tns:UpdateInterestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFriend">
+      <wsdl:input message="tns:InsertFriendSoapIn" />
+      <wsdl:output message="tns:InsertFriendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFriendStatus">
+      <wsdl:input message="tns:UpdateFriendStatusSoapIn" />
+      <wsdl:output message="tns:UpdateFriendStatusSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="User_x0020_ServiceSoap" type="tns:User_x0020_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserByPassword">
+      <soap:operation soapAction="http://tempuri.org/GetUserByPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByUserName">
+      <soap:operation soapAction="http://tempuri.org/GetUserByUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByID">
+      <soap:operation soapAction="http://tempuri.org/GetUserByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeByID">
+      <soap:operation soapAction="http://tempuri.org/GetUserTypeByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUniqueUserName">
+      <soap:operation soapAction="http://tempuri.org/CheckUniqueUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdminDeleteUser">
+      <soap:operation soapAction="http://tempuri.org/AdminDeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdminModifyUser">
+      <soap:operation soapAction="http://tempuri.org/AdminModifyUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap:operation soapAction="http://tempuri.org/AddUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLookingForList">
+      <soap:operation soapAction="http://tempuri.org/GetLookingForList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInterestList">
+      <soap:operation soapAction="http://tempuri.org/GetInterestList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLookingFor">
+      <soap:operation soapAction="http://tempuri.org/GetUserLookingFor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDualRelationship">
+      <soap:operation soapAction="http://tempuri.org/CheckDualRelationship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGender">
+      <soap:operation soapAction="http://tempuri.org/getGender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AcceptRelationshipRequest">
+      <soap:operation soapAction="http://tempuri.org/AcceptRelationshipRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRelationID">
+      <soap:operation soapAction="http://tempuri.org/GetUserRelationID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserFullname">
+      <soap:operation soapAction="http://tempuri.org/GetUserFullname" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestEstablishRelationship">
+      <soap:operation soapAction="http://tempuri.org/RequestEstablishRelationship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFriendList">
+      <soap:operation soapAction="http://tempuri.org/GetFriendList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationshipName">
+      <soap:operation soapAction="http://tempuri.org/GetRelationshipName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationshipID">
+      <soap:operation soapAction="http://tempuri.org/GetRelationshipID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestRelationship">
+      <soap:operation soapAction="http://tempuri.org/RequestRelationship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckRelationship">
+      <soap:operation soapAction="http://tempuri.org/CheckRelationship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOppositeCategory">
+      <soap:operation soapAction="http://tempuri.org/GetOppositeCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRelationshipType">
+      <soap:operation soapAction="http://tempuri.org/GetAllRelationshipType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRelationshipWith">
+      <soap:operation soapAction="http://tempuri.org/GetUserRelationshipWith" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRelationshipType">
+      <soap:operation soapAction="http://tempuri.org/GetUserRelationshipType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersName">
+      <soap:operation soapAction="http://tempuri.org/GetUsersName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInterest">
+      <soap:operation soapAction="http://tempuri.org/GetUserInterest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLookingFor">
+      <soap:operation soapAction="http://tempuri.org/UpdateLookingFor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInterest">
+      <soap:operation soapAction="http://tempuri.org/UpdateInterest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFriend">
+      <soap:operation soapAction="http://tempuri.org/InsertFriend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFriendStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateFriendStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="User_x0020_ServiceSoap12" type="tns:User_x0020_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserByPassword">
+      <soap12:operation soapAction="http://tempuri.org/GetUserByPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByUserName">
+      <soap12:operation soapAction="http://tempuri.org/GetUserByUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByID">
+      <soap12:operation soapAction="http://tempuri.org/GetUserByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeByID">
+      <soap12:operation soapAction="http://tempuri.org/GetUserTypeByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUniqueUserName">
+      <soap12:operation soapAction="http://tempuri.org/CheckUniqueUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdminDeleteUser">
+      <soap12:operation soapAction="http://tempuri.org/AdminDeleteUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdminModifyUser">
+      <soap12:operation soapAction="http://tempuri.org/AdminModifyUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap12:operation soapAction="http://tempuri.org/AddUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLookingForList">
+      <soap12:operation soapAction="http://tempuri.org/GetLookingForList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInterestList">
+      <soap12:operation soapAction="http://tempuri.org/GetInterestList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap12:operation soapAction="http://tempuri.org/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLookingFor">
+      <soap12:operation soapAction="http://tempuri.org/GetUserLookingFor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDualRelationship">
+      <soap12:operation soapAction="http://tempuri.org/CheckDualRelationship" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGender">
+      <soap12:operation soapAction="http://tempuri.org/getGender" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AcceptRelationshipRequest">
+      <soap12:operation soapAction="http://tempuri.org/AcceptRelationshipRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRelationID">
+      <soap12:operation soapAction="http://tempuri.org/GetUserRelationID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserFullname">
+      <soap12:operation soapAction="http://tempuri.org/GetUserFullname" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestEstablishRelationship">
+      <soap12:operation soapAction="http://tempuri.org/RequestEstablishRelationship" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFriendList">
+      <soap12:operation soapAction="http://tempuri.org/GetFriendList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationshipName">
+      <soap12:operation soapAction="http://tempuri.org/GetRelationshipName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationshipID">
+      <soap12:operation soapAction="http://tempuri.org/GetRelationshipID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestRelationship">
+      <soap12:operation soapAction="http://tempuri.org/RequestRelationship" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckRelationship">
+      <soap12:operation soapAction="http://tempuri.org/CheckRelationship" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOppositeCategory">
+      <soap12:operation soapAction="http://tempuri.org/GetOppositeCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRelationshipType">
+      <soap12:operation soapAction="http://tempuri.org/GetAllRelationshipType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRelationshipWith">
+      <soap12:operation soapAction="http://tempuri.org/GetUserRelationshipWith" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRelationshipType">
+      <soap12:operation soapAction="http://tempuri.org/GetUserRelationshipType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersName">
+      <soap12:operation soapAction="http://tempuri.org/GetUsersName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInterest">
+      <soap12:operation soapAction="http://tempuri.org/GetUserInterest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLookingFor">
+      <soap12:operation soapAction="http://tempuri.org/UpdateLookingFor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInterest">
+      <soap12:operation soapAction="http://tempuri.org/UpdateInterest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFriend">
+      <soap12:operation soapAction="http://tempuri.org/InsertFriend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFriendStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateFriendStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="User_x0020_Service">
+    <wsdl:port name="User_x0020_ServiceSoap" binding="tns:User_x0020_ServiceSoap">
+      <soap:address location="http://localhost:3335/UserService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="User_x0020_ServiceSoap12" binding="tns:User_x0020_ServiceSoap12">
+      <soap12:address location="http://localhost:3335/UserService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

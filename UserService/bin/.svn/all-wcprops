@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/UserService/bin
+END
+DBService.dll
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/UserService/bin/DBService.dll
+END
+UserService.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repo/infs3204g8/!svn/ver/4/Fnet1.4/Fnet/UserService/bin/UserService.pdb
+END
+Model.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repo/infs3204g8/!svn/ver/4/Fnet1.4/Fnet/UserService/bin/Model.pdb
+END
+UserService.dll
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repo/infs3204g8/!svn/ver/4/Fnet1.4/Fnet/UserService/bin/UserService.dll
+END
+DBService.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/infs3204g8/!svn/ver/3/Fnet1.4/Fnet/UserService/bin/DBService.pdb
+END
+Model.dll
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repo/infs3204g8/!svn/ver/4/Fnet1.4/Fnet/UserService/bin/Model.dll
+END

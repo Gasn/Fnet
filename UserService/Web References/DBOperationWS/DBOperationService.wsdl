@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertWithArray">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="table" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fields" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="values" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertWithArrayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertWithArrayResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertWithQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertWithQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertWithQueryResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWithArray">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="table" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fields" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="values" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="wherefield" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="whereequal" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWithArrayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateWithArrayResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWithQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWithQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateWithQueryResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWithSingleValue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="table" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="wherefield" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="whereequal" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWithSingleValueResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteWithMultipleValues">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="table" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="wherestring" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWithMultipleValuesResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteWithQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteWithQueryResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetResultWithQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultWithQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetResultWithQueryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultParameters">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="table" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fields" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="parameters" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultParametersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetResultParametersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertWithArraySoapIn">
+    <wsdl:part name="parameters" element="tns:InsertWithArray" />
+  </wsdl:message>
+  <wsdl:message name="InsertWithArraySoapOut">
+    <wsdl:part name="parameters" element="tns:InsertWithArrayResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertWithQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:InsertWithQuery" />
+  </wsdl:message>
+  <wsdl:message name="InsertWithQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:InsertWithQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWithArraySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWithArray" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWithArraySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWithArrayResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWithQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWithQuery" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWithQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWithQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWithSingleValueSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteWithSingleValue" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWithSingleValueSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteWithSingleValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWithMultipleValuesSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteWithMultipleValues" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWithMultipleValuesSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteWithMultipleValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWithQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteWithQuery" />
+  </wsdl:message>
+  <wsdl:message name="DeleteWithQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteWithQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetResultWithQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:GetResultWithQuery" />
+  </wsdl:message>
+  <wsdl:message name="GetResultWithQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:GetResultWithQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetResultParametersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetResultParameters" />
+  </wsdl:message>
+  <wsdl:message name="GetResultParametersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetResultParametersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DBServicesSoap">
+    <wsdl:operation name="InsertWithArray">
+      <wsdl:input message="tns:InsertWithArraySoapIn" />
+      <wsdl:output message="tns:InsertWithArraySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertWithQuery">
+      <wsdl:input message="tns:InsertWithQuerySoapIn" />
+      <wsdl:output message="tns:InsertWithQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWithArray">
+      <wsdl:input message="tns:UpdateWithArraySoapIn" />
+      <wsdl:output message="tns:UpdateWithArraySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWithQuery">
+      <wsdl:input message="tns:UpdateWithQuerySoapIn" />
+      <wsdl:output message="tns:UpdateWithQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWithSingleValue">
+      <wsdl:input message="tns:DeleteWithSingleValueSoapIn" />
+      <wsdl:output message="tns:DeleteWithSingleValueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWithMultipleValues">
+      <wsdl:input message="tns:DeleteWithMultipleValuesSoapIn" />
+      <wsdl:output message="tns:DeleteWithMultipleValuesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWithQuery">
+      <wsdl:input message="tns:DeleteWithQuerySoapIn" />
+      <wsdl:output message="tns:DeleteWithQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResultWithQuery">
+      <wsdl:input message="tns:GetResultWithQuerySoapIn" />
+      <wsdl:output message="tns:GetResultWithQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResultParameters">
+      <wsdl:input message="tns:GetResultParametersSoapIn" />
+      <wsdl:output message="tns:GetResultParametersSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DBServicesSoap" type="tns:DBServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertWithArray">
+      <soap:operation soapAction="http://tempuri.org/InsertWithArray" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertWithQuery">
+      <soap:operation soapAction="http://tempuri.org/InsertWithQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWithArray">
+      <soap:operation soapAction="http://tempuri.org/UpdateWithArray" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWithQuery">
+      <soap:operation soapAction="http://tempuri.org/UpdateWithQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWithSingleValue">
+      <soap:operation soapAction="http://tempuri.org/DeleteWithSingleValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWithMultipleValues">
+      <soap:operation soapAction="http://tempuri.org/DeleteWithMultipleValues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWithQuery">
+      <soap:operation soapAction="http://tempuri.org/DeleteWithQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultWithQuery">
+      <soap:operation soapAction="http://tempuri.org/GetResultWithQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultParameters">
+      <soap:operation soapAction="http://tempuri.org/GetResultParameters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DBServicesSoap12" type="tns:DBServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertWithArray">
+      <soap12:operation soapAction="http://tempuri.org/InsertWithArray" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertWithQuery">
+      <soap12:operation soapAction="http://tempuri.org/InsertWithQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWithArray">
+      <soap12:operation soapAction="http://tempuri.org/UpdateWithArray" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWithQuery">
+      <soap12:operation soapAction="http://tempuri.org/UpdateWithQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWithSingleValue">
+      <soap12:operation soapAction="http://tempuri.org/DeleteWithSingleValue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWithMultipleValues">
+      <soap12:operation soapAction="http://tempuri.org/DeleteWithMultipleValues" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWithQuery">
+      <soap12:operation soapAction="http://tempuri.org/DeleteWithQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultWithQuery">
+      <soap12:operation soapAction="http://tempuri.org/GetResultWithQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultParameters">
+      <soap12:operation soapAction="http://tempuri.org/GetResultParameters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DBServices">
+    <wsdl:port name="DBServicesSoap" binding="tns:DBServicesSoap">
+      <soap:address location="http://localhost:2563/DBOperationService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DBServicesSoap12" binding="tns:DBServicesSoap12">
+      <soap12:address location="http://localhost:2563/DBOperationService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

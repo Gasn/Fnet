@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetUsersByEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsersByEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsersByEmailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsersByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsersByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsersByNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupByCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="category" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupByCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupByCategoryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupByNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFriendList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFriendListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFriendListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFriendListByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFriendListByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFriendListByNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUsersByEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsersByEmail" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersByEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsersByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsersByName" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsersByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupByCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupByCategory" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupByCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupByCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupByName" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFriendListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFriendList" />
+  </wsdl:message>
+  <wsdl:message name="GetFriendListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFriendListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFriendListByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFriendListByName" />
+  </wsdl:message>
+  <wsdl:message name="GetFriendListByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFriendListByNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Search_x0020_ServiceSoap">
+    <wsdl:operation name="GetUsersByEmail">
+      <wsdl:input message="tns:GetUsersByEmailSoapIn" />
+      <wsdl:output message="tns:GetUsersByEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersByName">
+      <wsdl:input message="tns:GetUsersByNameSoapIn" />
+      <wsdl:output message="tns:GetUsersByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupByCategory">
+      <wsdl:input message="tns:GetGroupByCategorySoapIn" />
+      <wsdl:output message="tns:GetGroupByCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupByName">
+      <wsdl:input message="tns:GetGroupByNameSoapIn" />
+      <wsdl:output message="tns:GetGroupByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFriendList">
+      <wsdl:input message="tns:GetFriendListSoapIn" />
+      <wsdl:output message="tns:GetFriendListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFriendListByName">
+      <wsdl:input message="tns:GetFriendListByNameSoapIn" />
+      <wsdl:output message="tns:GetFriendListByNameSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Search_x0020_ServiceSoap" type="tns:Search_x0020_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUsersByEmail">
+      <soap:operation soapAction="http://tempuri.org/GetUsersByEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersByName">
+      <soap:operation soapAction="http://tempuri.org/GetUsersByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupByCategory">
+      <soap:operation soapAction="http://tempuri.org/GetGroupByCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupByName">
+      <soap:operation soapAction="http://tempuri.org/GetGroupByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFriendList">
+      <soap:operation soapAction="http://tempuri.org/GetFriendList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFriendListByName">
+      <soap:operation soapAction="http://tempuri.org/GetFriendListByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Search_x0020_ServiceSoap12" type="tns:Search_x0020_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUsersByEmail">
+      <soap12:operation soapAction="http://tempuri.org/GetUsersByEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersByName">
+      <soap12:operation soapAction="http://tempuri.org/GetUsersByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupByCategory">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupByCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupByName">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFriendList">
+      <soap12:operation soapAction="http://tempuri.org/GetFriendList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFriendListByName">
+      <soap12:operation soapAction="http://tempuri.org/GetFriendListByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Search_x0020_Service">
+    <wsdl:port name="Search_x0020_ServiceSoap" binding="tns:Search_x0020_ServiceSoap">
+      <soap:address location="http://localhost:3334/SearchService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Search_x0020_ServiceSoap12" binding="tns:Search_x0020_ServiceSoap12">
+      <soap12:address location="http://localhost:3334/SearchService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

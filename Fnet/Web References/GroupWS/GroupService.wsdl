@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateGroupDefaultCat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grpName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grpCatID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grpDesc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grpType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="createdDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileSize" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateGroupDefaultCatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateGroupDefaultCatResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateNewGroupTopic">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="groupID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topicName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="createdDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateNewGroupTopicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateNewGroupTopicResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateGroupNewCat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="catName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="catDesc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grpName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grpDesc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grpType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="createdDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileSize" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateGroupNewCatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateGroupNewCatResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserGroupOwner">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserGroupOwnerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserGroupOwnerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserGroupMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserGroupMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserGroupMemberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="groupID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupDetailsResult" type="tns:Group" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Group">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="GroupID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CatID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GroupType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FileSharingID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCatDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCatDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCatDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCatDetailsByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="catID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCatDetailsByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCatDetailsByIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteUserFromGroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grpID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteUserFromGroupResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="deleteGroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="grpID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteGroupResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="updateGroupDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="grpID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grpName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="grpDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateGroupDetailsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateBoardContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="boardContentID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="boardDesc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBoardContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateBoardContentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrieveBoardContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="boardContentID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrieveBoardContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetrieveBoardContentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserTypeID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="groupID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserTypeIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserTypeIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupAuthorisation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupAuthorisationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetGroupAuthorisationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserTypeResult" type="tns:UserType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Read" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Write" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Edit" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Delete" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBoardTopics">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBoardTopicsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBoardTopicsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupOwnerDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupOwnerDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupOwnerDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupMembers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupMembersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupMembersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupMembersByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupMembersByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupMembersByNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingGroupMembers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPendingGroupMembersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPendingGroupMembersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateGroupMemeber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userGroupList" type="tns:UserGroupList" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserGroupList">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ListID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GroupID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserTypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RequestUserID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="JoinDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateGroupMemeberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateGroupMemeberResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateGroupMemeberStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="listID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateGroupMemeberStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateGroupMemeberStatusResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupModerator">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupModeratorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupModeratorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateGroupMemberType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="listID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateGroupMemberTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateGroupMemberTypeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNonMemberByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNonMemberByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNonMemberByNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDiscussionBoardContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="boardID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDiscussionBoardContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDiscussionBoardContentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertGroupMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="requestUserID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertGroupMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertGroupMemberResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertBoardContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="boardID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="boardDetails" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="createdDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertBoardContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertBoardContentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteBoardContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="boardContentID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteBoardContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteBoardContentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateGroupDefaultCatSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateGroupDefaultCat" />
+  </wsdl:message>
+  <wsdl:message name="CreateGroupDefaultCatSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateGroupDefaultCatResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateNewGroupTopicSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateNewGroupTopic" />
+  </wsdl:message>
+  <wsdl:message name="CreateNewGroupTopicSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateNewGroupTopicResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateGroupNewCatSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateGroupNewCat" />
+  </wsdl:message>
+  <wsdl:message name="CreateGroupNewCatSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateGroupNewCatResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserGroupOwnerSoapIn">
+    <wsdl:part name="parameters" element="tns:UserGroupOwner" />
+  </wsdl:message>
+  <wsdl:message name="UserGroupOwnerSoapOut">
+    <wsdl:part name="parameters" element="tns:UserGroupOwnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserGroupMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:UserGroupMember" />
+  </wsdl:message>
+  <wsdl:message name="UserGroupMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:UserGroupMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCatDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCatDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetCatDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCatDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCatDetailsByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCatDetailsByID" />
+  </wsdl:message>
+  <wsdl:message name="GetCatDetailsByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCatDetailsByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteUserFromGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteUserFromGroup" />
+  </wsdl:message>
+  <wsdl:message name="deleteUserFromGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteUserFromGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteGroupSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteGroup" />
+  </wsdl:message>
+  <wsdl:message name="deleteGroupSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateGroupDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:updateGroupDetails" />
+  </wsdl:message>
+  <wsdl:message name="updateGroupDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:updateGroupDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBoardContentSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateBoardContent" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBoardContentSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateBoardContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveBoardContentSoapIn">
+    <wsdl:part name="parameters" element="tns:RetrieveBoardContent" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveBoardContentSoapOut">
+    <wsdl:part name="parameters" element="tns:RetrieveBoardContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTypeIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserTypeID" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTypeIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserTypeIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupAuthorisationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupAuthorisation" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupAuthorisationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupAuthorisationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserType" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBoardTopicsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBoardTopics" />
+  </wsdl:message>
+  <wsdl:message name="GetBoardTopicsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBoardTopicsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupOwnerDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupOwnerDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupOwnerDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupOwnerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupMembersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupMembers" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupMembersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupMembersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupMembersByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupMembersByName" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupMembersByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupMembersByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingGroupMembersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPendingGroupMembers" />
+  </wsdl:message>
+  <wsdl:message name="GetPendingGroupMembersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPendingGroupMembersResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGroupMemeberSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateGroupMemeber" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGroupMemeberSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateGroupMemeberResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGroupMemeberStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateGroupMemeberStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGroupMemeberStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateGroupMemeberStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupModeratorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupModerator" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupModeratorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupModeratorResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGroupMemberTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateGroupMemberType" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGroupMemberTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateGroupMemberTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNonMemberByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNonMemberByName" />
+  </wsdl:message>
+  <wsdl:message name="GetNonMemberByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNonMemberByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDiscussionBoardContentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDiscussionBoardContent" />
+  </wsdl:message>
+  <wsdl:message name="GetDiscussionBoardContentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDiscussionBoardContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertGroupMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertGroupMember" />
+  </wsdl:message>
+  <wsdl:message name="InsertGroupMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertGroupMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertBoardContentSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertBoardContent" />
+  </wsdl:message>
+  <wsdl:message name="InsertBoardContentSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertBoardContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteBoardContentSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteBoardContent" />
+  </wsdl:message>
+  <wsdl:message name="DeleteBoardContentSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteBoardContentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GroupServiceSoap">
+    <wsdl:operation name="CreateGroupDefaultCat">
+      <wsdl:input message="tns:CreateGroupDefaultCatSoapIn" />
+      <wsdl:output message="tns:CreateGroupDefaultCatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewGroupTopic">
+      <wsdl:input message="tns:CreateNewGroupTopicSoapIn" />
+      <wsdl:output message="tns:CreateNewGroupTopicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroupNewCat">
+      <wsdl:input message="tns:CreateGroupNewCatSoapIn" />
+      <wsdl:output message="tns:CreateGroupNewCatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserGroupOwner">
+      <wsdl:input message="tns:UserGroupOwnerSoapIn" />
+      <wsdl:output message="tns:UserGroupOwnerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserGroupMember">
+      <wsdl:input message="tns:UserGroupMemberSoapIn" />
+      <wsdl:output message="tns:UserGroupMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetails">
+      <wsdl:input message="tns:GetGroupDetailsSoapIn" />
+      <wsdl:output message="tns:GetGroupDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCatDetails">
+      <wsdl:input message="tns:GetCatDetailsSoapIn" />
+      <wsdl:output message="tns:GetCatDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCatDetailsByID">
+      <wsdl:input message="tns:GetCatDetailsByIDSoapIn" />
+      <wsdl:output message="tns:GetCatDetailsByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserFromGroup">
+      <wsdl:input message="tns:deleteUserFromGroupSoapIn" />
+      <wsdl:output message="tns:deleteUserFromGroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroup">
+      <wsdl:input message="tns:deleteGroupSoapIn" />
+      <wsdl:output message="tns:deleteGroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateGroupDetails">
+      <wsdl:input message="tns:updateGroupDetailsSoapIn" />
+      <wsdl:output message="tns:updateGroupDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBoardContent">
+      <wsdl:input message="tns:UpdateBoardContentSoapIn" />
+      <wsdl:output message="tns:UpdateBoardContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveBoardContent">
+      <wsdl:input message="tns:RetrieveBoardContentSoapIn" />
+      <wsdl:output message="tns:RetrieveBoardContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeID">
+      <wsdl:input message="tns:GetUserTypeIDSoapIn" />
+      <wsdl:output message="tns:GetUserTypeIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupAuthorisation">
+      <wsdl:input message="tns:GetGroupAuthorisationSoapIn" />
+      <wsdl:output message="tns:GetGroupAuthorisationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserType">
+      <wsdl:input message="tns:GetUserTypeSoapIn" />
+      <wsdl:output message="tns:GetUserTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBoardTopics">
+      <wsdl:input message="tns:GetBoardTopicsSoapIn" />
+      <wsdl:output message="tns:GetBoardTopicsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupOwnerDetails">
+      <wsdl:input message="tns:GetGroupOwnerDetailsSoapIn" />
+      <wsdl:output message="tns:GetGroupOwnerDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMembers">
+      <wsdl:input message="tns:GetGroupMembersSoapIn" />
+      <wsdl:output message="tns:GetGroupMembersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMembersByName">
+      <wsdl:input message="tns:GetGroupMembersByNameSoapIn" />
+      <wsdl:output message="tns:GetGroupMembersByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingGroupMembers">
+      <wsdl:input message="tns:GetPendingGroupMembersSoapIn" />
+      <wsdl:output message="tns:GetPendingGroupMembersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupMemeber">
+      <wsdl:input message="tns:UpdateGroupMemeberSoapIn" />
+      <wsdl:output message="tns:UpdateGroupMemeberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupMemeberStatus">
+      <wsdl:input message="tns:UpdateGroupMemeberStatusSoapIn" />
+      <wsdl:output message="tns:UpdateGroupMemeberStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupModerator">
+      <wsdl:input message="tns:GetGroupModeratorSoapIn" />
+      <wsdl:output message="tns:GetGroupModeratorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupMemberType">
+      <wsdl:input message="tns:UpdateGroupMemberTypeSoapIn" />
+      <wsdl:output message="tns:UpdateGroupMemberTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNonMemberByName">
+      <wsdl:input message="tns:GetNonMemberByNameSoapIn" />
+      <wsdl:output message="tns:GetNonMemberByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscussionBoardContent">
+      <wsdl:input message="tns:GetDiscussionBoardContentSoapIn" />
+      <wsdl:output message="tns:GetDiscussionBoardContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertGroupMember">
+      <wsdl:input message="tns:InsertGroupMemberSoapIn" />
+      <wsdl:output message="tns:InsertGroupMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertBoardContent">
+      <wsdl:input message="tns:InsertBoardContentSoapIn" />
+      <wsdl:output message="tns:InsertBoardContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBoardContent">
+      <wsdl:input message="tns:DeleteBoardContentSoapIn" />
+      <wsdl:output message="tns:DeleteBoardContentSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GroupServiceSoap" type="tns:GroupServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateGroupDefaultCat">
+      <soap:operation soapAction="http://tempuri.org/CreateGroupDefaultCat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewGroupTopic">
+      <soap:operation soapAction="http://tempuri.org/CreateNewGroupTopic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroupNewCat">
+      <soap:operation soapAction="http://tempuri.org/CreateGroupNewCat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserGroupOwner">
+      <soap:operation soapAction="http://tempuri.org/UserGroupOwner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserGroupMember">
+      <soap:operation soapAction="http://tempuri.org/UserGroupMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetails">
+      <soap:operation soapAction="http://tempuri.org/GetGroupDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatDetails">
+      <soap:operation soapAction="http://tempuri.org/GetCatDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatDetailsByID">
+      <soap:operation soapAction="http://tempuri.org/GetCatDetailsByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserFromGroup">
+      <soap:operation soapAction="http://tempuri.org/deleteUserFromGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroup">
+      <soap:operation soapAction="http://tempuri.org/deleteGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateGroupDetails">
+      <soap:operation soapAction="http://tempuri.org/updateGroupDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBoardContent">
+      <soap:operation soapAction="http://tempuri.org/UpdateBoardContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveBoardContent">
+      <soap:operation soapAction="http://tempuri.org/RetrieveBoardContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeID">
+      <soap:operation soapAction="http://tempuri.org/GetUserTypeID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupAuthorisation">
+      <soap:operation soapAction="http://tempuri.org/GetGroupAuthorisation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserType">
+      <soap:operation soapAction="http://tempuri.org/GetUserType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBoardTopics">
+      <soap:operation soapAction="http://tempuri.org/GetBoardTopics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupOwnerDetails">
+      <soap:operation soapAction="http://tempuri.org/GetGroupOwnerDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMembers">
+      <soap:operation soapAction="http://tempuri.org/GetGroupMembers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMembersByName">
+      <soap:operation soapAction="http://tempuri.org/GetGroupMembersByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingGroupMembers">
+      <soap:operation soapAction="http://tempuri.org/GetPendingGroupMembers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupMemeber">
+      <soap:operation soapAction="http://tempuri.org/UpdateGroupMemeber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupMemeberStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateGroupMemeberStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupModerator">
+      <soap:operation soapAction="http://tempuri.org/GetGroupModerator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupMemberType">
+      <soap:operation soapAction="http://tempuri.org/UpdateGroupMemberType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonMemberByName">
+      <soap:operation soapAction="http://tempuri.org/GetNonMemberByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscussionBoardContent">
+      <soap:operation soapAction="http://tempuri.org/GetDiscussionBoardContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertGroupMember">
+      <soap:operation soapAction="http://tempuri.org/InsertGroupMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertBoardContent">
+      <soap:operation soapAction="http://tempuri.org/InsertBoardContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBoardContent">
+      <soap:operation soapAction="http://tempuri.org/DeleteBoardContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GroupServiceSoap12" type="tns:GroupServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateGroupDefaultCat">
+      <soap12:operation soapAction="http://tempuri.org/CreateGroupDefaultCat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewGroupTopic">
+      <soap12:operation soapAction="http://tempuri.org/CreateNewGroupTopic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroupNewCat">
+      <soap12:operation soapAction="http://tempuri.org/CreateGroupNewCat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserGroupOwner">
+      <soap12:operation soapAction="http://tempuri.org/UserGroupOwner" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserGroupMember">
+      <soap12:operation soapAction="http://tempuri.org/UserGroupMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetCatDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatDetailsByID">
+      <soap12:operation soapAction="http://tempuri.org/GetCatDetailsByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUserFromGroup">
+      <soap12:operation soapAction="http://tempuri.org/deleteUserFromGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroup">
+      <soap12:operation soapAction="http://tempuri.org/deleteGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateGroupDetails">
+      <soap12:operation soapAction="http://tempuri.org/updateGroupDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBoardContent">
+      <soap12:operation soapAction="http://tempuri.org/UpdateBoardContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveBoardContent">
+      <soap12:operation soapAction="http://tempuri.org/RetrieveBoardContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeID">
+      <soap12:operation soapAction="http://tempuri.org/GetUserTypeID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupAuthorisation">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupAuthorisation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserType">
+      <soap12:operation soapAction="http://tempuri.org/GetUserType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBoardTopics">
+      <soap12:operation soapAction="http://tempuri.org/GetBoardTopics" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupOwnerDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupOwnerDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMembers">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupMembers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMembersByName">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupMembersByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingGroupMembers">
+      <soap12:operation soapAction="http://tempuri.org/GetPendingGroupMembers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupMemeber">
+      <soap12:operation soapAction="http://tempuri.org/UpdateGroupMemeber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupMemeberStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateGroupMemeberStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupModerator">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupModerator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGroupMemberType">
+      <soap12:operation soapAction="http://tempuri.org/UpdateGroupMemberType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonMemberByName">
+      <soap12:operation soapAction="http://tempuri.org/GetNonMemberByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscussionBoardContent">
+      <soap12:operation soapAction="http://tempuri.org/GetDiscussionBoardContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertGroupMember">
+      <soap12:operation soapAction="http://tempuri.org/InsertGroupMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertBoardContent">
+      <soap12:operation soapAction="http://tempuri.org/InsertBoardContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBoardContent">
+      <soap12:operation soapAction="http://tempuri.org/DeleteBoardContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GroupService">
+    <wsdl:port name="GroupServiceSoap" binding="tns:GroupServiceSoap">
+      <soap:address location="http://localhost:3332/GroupService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GroupServiceSoap12" binding="tns:GroupServiceSoap12">
+      <soap12:address location="http://localhost:3332/GroupService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterpageforgroup.master.cs"
+    Inherits="masterpages_masterpageforgroup" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--[if lte IE 7]>
+    <style type="text/css">
+    html .jqueryslidemenu{height: 1%;}
+    </style>
+    <![endif]-->
+</head>
+<body>
+    <form id="form3" runat="server">
+    <!-- header bar -->
+    <div class="headerbar" align="right">
+        <asp:LinkButton ID="lnkLogout" runat="server" ForeColor="#00CC99" Font-Bold="True"
+            Font-Underline="True" OnClick="lnkLogout_Click">Sign Out</asp:LinkButton>
+    </div>
+    <!-- Menu -->
+    <div class="rhm1">
+        <div class="rhm1-bg">
+            <ul>
+                <li id="menu_Help"><a href="#"><span>Help</span></a></li>
+                <li id="menu_Contact"><a href="#"><span>Contact Us</span></a></li>
+                <li id="menu_About"><a href="#"><span>About Us</span></a></li>
+                <li id="menu_home"><a href="UserEditProfile.aspx"><span>Home</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="usernavigation">
+        <div class="wrapper1">
+            <div class="wrapper">
+                <div>
+                    <div class="nav">
+                        <ul class="navigation">
+                            <li class=""><a href="UserWall.aspx"><span class="menu-left"></span><span class="menu-mid">
+                                Your Wall</span> <span class="menu-right"></span></a></li>
+                            <li class=""><a href="UserEditProfile.aspx"><span class="menu-left"></span><span
+                                class="menu-mid">Profile</span> <span class="menu-right"></span></a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="UserEditProfile.aspx">Edit Profile Details</a></li>                                      
+                                        <li><a href="UserSetting.aspx">Change User Name Or Password</a></li>
+                                    </ul>
+                                    <div class="btm-bg">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=""><a href="UserFriendList.aspx"><span class="menu-left"></span><span class="menu-mid">Friends</span>
+                                <span class="menu-right"></span></a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="UserFriendList.aspx">All Friends</a></li>                                    
+                                    </ul>
+                                    <div class="btm-bg">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=""><a href="UserGroupProfile.aspx"><span class="menu-left"></span><span
+                                class="menu-mid">Group</span> <span class="menu-right"></span></a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="UserGroupProfile.aspx">My Group</a></li>                                 
+                                    </ul>
+                                    <div class="btm-bg">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=""><a href="UserPhoto.aspx"><span class="menu-left"></span><span class="menu-mid">
+                                Photo</span> <span class="menu-right"></span></a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="UserPhoto.aspx">My Photo</a></li>
+                                       
+                                    </ul>
+                                    <div class="btm-bg">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=""><a href="UserInbox.aspx"><span class="menu-left"></span><span class="menu-mid">Inbox</span>
+                                <span class="menu-right"></span></a>
+                                <div class="sub">
+                                    <ul>                                       
+                                        <li><a href="UserInbox.aspx">Inbox</a></li>
+                                    </ul>
+                                    <div class="btm-bg">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=""><a href="UserSearch.aspx"><span class="menu-left"></span><span class="menu-mid">
+                                Search</span> <span class="menu-right"></span></a></li>
+                            <li class="last"><a href="UserSetting.aspx"><span class="menu-left"></span><span
+                                class="menu-mid">Setting</span> <span class="menu-right"></span></a></li>
+                        </ul>
+                    </div>
+              <!--      <div class="gradient"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="contentpage">
+        <table class="tableContent">
+            <tr>
+                <!--GROUP CONTENT IS HERE..............................................................................................................-->
+                <td valign="top">
+                    <div id="groupContentHolder">
+                        <div>
+                            <br />
+                            <div>
+                                <asp:ScriptManager ID="ScriptManager1" runat="server" />
+                                <asp:ContentPlaceHolder ID="group" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    </form>
+    <!-- footer -->
+    <div id="footer">
+        <p id="legal">
+            <br />
+            Copyright &copy; 2010 Fnet Social Networking. Designed by Team 8 Includes: Thao, Sang, Nguyen and Long <a href="#"></a>
+        </p>
+    </div>
+</body>
+</html>

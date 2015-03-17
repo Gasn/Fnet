@@ -1,0 +1,194 @@
+﻿body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url('../images/img01.jpg') repeat-x;
+	font: normal 12px Tahoma, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+h1, h2{
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #F49500;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+h3 
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 13px;
+	color: #F49500;
+}
+
+p, blockquote {
+	line-height: 18px;
+	text-align: justify;
+}
+
+blockquote {
+	padding-left: 20px;
+	background: url('../images/img05.gif') repeat-y;
+}
+
+a {
+	color: #F49500;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#contentGroup
+{
+	float: none;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+ul
+{
+	list-style-type: none;
+	margin-left: 0px;
+}
+
+li {
+	margin-bottom: 15px;
+}
+
+/* TABLE GROUP LIST */
+
+#groupFirstInfo
+{
+	width: 100%;
+	margin: auto;
+
+}
+
+#groupFirstInfo td
+{
+	padding-left: 25px;
+}
+
+
+.groupFirstInfo td
+{
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	vertical-align: top;
+	border-bottom: 1px inset #aaa;
+}
+
+.generalGroupInfo
+{
+	width: 500px;
+}
+
+
+
+.welcome
+{
+	text-align: center;
+	margin-left: 100px;
+}
+
+.groupInfo
+{
+	margin-left: 0px;
+	width: 350px;
+}
+
+/* DISCUSSION BOARD */
+
+.highLight
+{
+	Background-color: #F1FAF1;
+	border-bottom: solid;
+	border: 2px;
+	border-bottom-color: #bbb;
+	
+}
+
+/* ADD NEW TOPIC INTO DISCUSSION BOARD */
+
+.newGroupTable td 
+{
+	vertical-align: top;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/* FILE SHAREING ---------------------------------------------------------------------------------------------------------------------- */
+
+.uploadF
+{
+	width: 389px;
+	border-bottom: inset 1px #aaa;
+	
+}
+
+.uploadF td
+{
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 20px;
+	vertical-align: top;
+}
+
+/* GROUP MEMBER ------------------------------------------------------------------------------------------------------------------------ */
+
+.memberInfo td
+{
+	padding: 30px;
+	text-align: center;
+}
+
+/* INVITE NEW MEMBER FROM CURRENT MEMBER ----------------------------------------------------------------------------------------------- */
+
+.inviteFriendSection
+{
+	Background-color: #F1FAF1;
+}
+
+.inviteNewUserFormMember td
+{
+	vertical-align: top;
+	padding: 10px;
+	text-align: left;
+}
+
+/* GROUP PROFILE ------------------------------------------------------------------------------------------------------------------------*/
+
+.groupProfileSection
+{
+	
+}
+
+.adminEditGroupInfoSection
+{
+	Background-color: #F1FAF1;
+}
+
+
+.currentGroupProfile td
+{
+	vertical-align: top;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	text-align: left;
+}

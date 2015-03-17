@@ -1,0 +1,164 @@
+﻿body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url('../images/img01.jpg') repeat-x;
+	font: normal 12px Tahoma, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+h1, h2{
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #F49500;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+h3 
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 13px;
+	color: #F49500;
+}
+
+p, blockquote {
+	line-height: 18px;
+	text-align: justify;
+}
+
+blockquote {
+	padding-left: 20px;
+	background: url('../images/img05.gif') repeat-y;
+}
+
+a {
+	color: #F49500;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#contentGroupTopic
+{
+	float: none;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+ul
+{
+	list-style-type: none;
+	margin-left: 0px;
+}
+
+li {
+	margin-bottom: 15px;
+}
+
+/* TOPIC NAME SECTION */
+
+#topicNameSection{
+	background-color: #F1FAF1;
+	height: 21px;
+	border-bottom: inset 2px #aaa;
+}
+
+#tableTopicInfo
+{
+	border-bottom: solid 1px #ccc;
+}
+
+#tableTopicInfo td
+{
+	vertical-align: bottom;
+}
+
+/* INITIAL TOPIC INFO */
+
+#initialTopicInfo
+{
+	width: 838px;
+}
+
+#initialTopicInfo td
+{
+	vertical-align: top;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border: inset 1px #aaa;
+	text-align: left;
+}
+
+#contentInfo
+{
+	border-bottom: inset 2px #F4CFFF;
+}
+
+#newComment
+{
+	background-color: #F5FFFA;
+	
+}
+
+#otherMemberComment
+{
+	padding-left:70px;
+	padding-right:70px;
+}
+/* COMMENT TABLE */
+
+.comments
+{
+	width: 100%;
+}
+
+.comments td
+{
+	text-align: left;
+	vertical-align: top;
+	padding: 10px;
+	border: solid 1px #ccc;
+	
+}
+
+.memberPostInfo
+{
+	width: 150px;
+	height: 60px;
+}
+
+.timeCommentPost
+{
+	vertical-align: bottom;
+
+}
+
+
+.groupInfo 
+{
+	margin-left: 70px;
+	border-bottom: solid 1px #aaa;
+	width: 477px;
+}
+
+.groupInfo td
+{
+	border: solid 1px #eee;
+	padding: 10px;
+}
+
+.contentDiscussion
+{
+	margin-left: 30px;
+}
